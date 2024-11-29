@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3002/students'; // Use the full URL to avoid CORS issues
+const baseUrl = '/students'; // Use the full URL to avoid CORS issues
 
 const addButton = document.getElementById('add'); // Button to open modal
 const addModal = document.getElementById('modal'); // Modal element
