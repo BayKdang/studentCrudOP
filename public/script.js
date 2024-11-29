@@ -1,4 +1,7 @@
-const baseUrl = '/students'; // Use the full URL to avoid CORS issues
+const baseUrl =
+    window.location.hostname === 'localhost'
+        ? 'http://127.0.0.1:3002/students'
+        : 'https://active-jessika-rupp-4ab1984b.koyeb.app/studentCrudOP/students';
 
 const addButton = document.getElementById('add'); // Button to open modal
 const addModal = document.getElementById('modal'); // Modal element
