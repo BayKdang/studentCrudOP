@@ -1,7 +1,7 @@
-const baseUrl =
-    window.location.hostname === 'localhost'
-        ? 'http://127.0.0.1:3002/students'
-        : 'https://active-jessika-rupp-4ab1984b.koyeb.app/studentCrudOP/students';
+const baseUrl = window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost'
+    ? 'http://localhost:3002/students' // Backend during local development
+    : '/students'; // Deployed environment
+
 
 const addButton = document.getElementById('add'); // Button to open modal
 const addModal = document.getElementById('modal'); // Modal element
